@@ -22,6 +22,7 @@ export const ArithmeticControlInput = ({
         id={id}
         name={id}
         type="number"
+        pattern="\d*"
         value={value}
         onChange={(e) => {
           if (
