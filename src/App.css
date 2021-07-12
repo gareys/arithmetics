@@ -1,0 +1,42 @@
+.App {
+  text-align: right;
+  margin: 0 30px;
+  max-width: 1000px;
+}
+
+#App-header {
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#App-header label {
+  display: block;
+}
+
+#App-header > * {
+  margin-right: 20px;
+}
+
+#App-content {
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  #App-header {
+    flex-direction: column;
+  }
+  #App-header label {
+    display: inline;
+  }
+  #App-content {
+    padding-top: 150px;
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
