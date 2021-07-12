@@ -14,10 +14,10 @@ export const ArithmeticDisplay = () => {
       <h2>{variable}</h2>
       {[...Array(endingRange + 1 - startingRange)].map((_n, i) => {
         const expression = arithmeticExpression(
-          i + startingRange,
-          variable
+          variable,
+          i + startingRange
         ).join(' ');
-        const solution = equation(i + startingRange, variable);
+        const solution = equation(variable, i + startingRange);
         return (
           <p key={expression}>
             <em>{expression}</em> = <strong>{solution.toString()}</strong>

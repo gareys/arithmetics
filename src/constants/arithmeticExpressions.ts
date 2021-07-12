@@ -6,34 +6,34 @@ export const arithmeticExpressions: {
     variable: number
   ) => [number, string, number];
 } = {
-  multiplication: (rangeVariable: number, variable: number) => [
-    rangeVariable,
+  multiplication: (variable: number, rangeVariable: number) => [
+    variable,
     '×',
-    variable,
-  ],
-  division: (rangeVariable: number, variable: number) => [
     rangeVariable,
+  ],
+  division: (variable: number, rangeVariable: number) => [
+    variable,
     '÷',
-    variable,
-  ],
-  addition: (rangeVariable: number, variable: number) => [
     rangeVariable,
+  ],
+  addition: (variable: number, rangeVariable: number) => [
+    variable,
     '+',
-    variable,
-  ],
-  subtraction: (rangeVariable: number, variable: number) => [
     rangeVariable,
+  ],
+  subtraction: (variable: number, rangeVariable: number) => [
+    variable,
     '-',
-    variable,
-  ],
-  exponentiation: (rangeVariable: number, variable: number) => [
     rangeVariable,
+  ],
+  exponentiation: (variable: number, rangeVariable: number) => [
+    variable,
     '^',
-    variable,
-  ],
-  nth_root: (rangeVariable: number, variable: number) => [
-    variable,
-    '√',
     rangeVariable,
+  ],
+  nth_root: (variable: number, rangeVariable: number) => [
+    rangeVariable,
+    '√',
+    variable,
   ],
 };
