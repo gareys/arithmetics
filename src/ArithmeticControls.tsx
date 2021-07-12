@@ -33,7 +33,11 @@ export const ArithmeticControls = () => {
         >
           {equationTuples.map(([arithmetic, _equation]) => {
             const displayValue = arithmetic.split('_').join(' ');
-            return <option value={arithmetic}>{displayValue}</option>;
+            return (
+              <option key={arithmetic} value={arithmetic}>
+                {displayValue}
+              </option>
+            );
           })}
         </select>
       </p>

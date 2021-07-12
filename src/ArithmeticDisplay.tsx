@@ -13,13 +13,14 @@ export const ArithmeticDisplay = () => {
       <h3>{solutionName}s of the number</h3>
       <h2>{variable}</h2>
       {[...Array(endingRange + 1 - startingRange)].map((_n, i) => {
+        const expression = arithmeticExpression(
+          i + startingRange,
+          variable
+        ).join(' ');
         const solution = equation(i + startingRange, variable);
         return (
-          <p key={solution + Math.random()}>
-            <em>
-              {arithmeticExpression(i + startingRange, variable).join(' ')}
-            </em>{' '}
-            = <strong>{solution}</strong>
+          <p key={expression}>
+            <em>{expression}</em> = <strong>{solution.toString()}</strong>
           </p>
         );
       })}
