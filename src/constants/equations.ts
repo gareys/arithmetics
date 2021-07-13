@@ -17,9 +17,9 @@ export const equationTuples = [
 ] as const;
 
 export type ArithmeticTypes = typeof equationTuples[number][0];
-
+export type EquationType = (rangeVariable: number, variable: number) => number;
 type EquationObject = {
-  [K in ArithmeticTypes]: (rangeVariable: number, variable: number) => number;
+  [K in ArithmeticTypes]: EquationType;
 };
 
 export const equations = equationTuples.reduce((acc, [arithmetic, eq]) => {
