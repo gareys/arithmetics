@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ArithmeticControlInput } from './ArithmeticContolInput';
+import { ArithmeticControlInput } from './ArithmeticControlInput';
 import { useArithmetic } from './contexts/ArithmeticContext';
 import { useArithmeticControlsContext } from './contexts/ArithmeticControlsContext';
 import { ArithmeticTypes, equationTuples } from './constants/equations';

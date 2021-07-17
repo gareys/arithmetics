@@ -4,7 +4,7 @@ import {
   INITIAL_RANGE_BEGINNING,
   INITIAL_RANGE_ENDING,
   INITIAL_VARIABLE,
-} from '../constants/initalValues';
+} from '../constants/initialValues';
 import { ArithmeticTypes } from '../constants/equations';
 
 type ContextProps =

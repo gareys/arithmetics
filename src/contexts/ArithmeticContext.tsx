@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useReducer } from 'react';
-import { INITIAL_ARITHMETIC } from '../constants/initalValues';
+import { INITIAL_ARITHMETIC } from '../constants/initialValues';
 import {
   ArithmeticTypes,
   equations,
